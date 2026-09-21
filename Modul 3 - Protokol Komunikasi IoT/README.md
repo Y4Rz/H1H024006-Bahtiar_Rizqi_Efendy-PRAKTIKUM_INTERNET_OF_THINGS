@@ -289,13 +289,13 @@ void loop() {
 
 Pada percobaan HTTP, perangkat berhasil mengirimkan data dalam format JSON menuju endpoint `httpbin.org/post` menggunakan metode POST. Berdasarkan data pengamatan, pengiriman dilakukan pada interval 10 detik mulai dari waktu 0 sampai 90 detik.
 
-Seluruh 10 kali pengiriman memperoleh **HTTP Response Code 200** dan status pengiriman tercatat **Berhasil**. Response body juga menunjukkan kembali data JSON yang dikirimkan, sehingga data dapat diverifikasi telah diterima oleh server. fileciteturn2file1L7-L23
+Seluruh 10 kali pengiriman memperoleh **HTTP Response Code 200** dan status pengiriman tercatat **Berhasil**. Response body juga menunjukkan kembali data JSON yang dikirimkan, sehingga data dapat diverifikasi telah diterima oleh server.
 
 ### Percobaan 3B — MQTT
 
 Pada percobaan MQTT, perangkat berhasil terhubung ke broker dan mempublikasikan data JSON ke topic `unsoed/tk245004/nim10/sensor`. Data tersebut kemudian diterima oleh subscriber dengan isi JSON yang sama.
 
-Berdasarkan tabel pengamatan, seluruh 10 kali pengiriman pada rentang 0 hingga 90 detik berstatus **Terhubung** dan **Berhasil**, serta data yang diterima subscriber sesuai dengan data yang dipublikasikan. fileciteturn2file1L32-L43
+Berdasarkan tabel pengamatan, seluruh 10 kali pengiriman pada rentang 0 hingga 90 detik berstatus **Terhubung** dan **Berhasil**, serta data yang diterima subscriber sesuai dengan data yang dipublikasikan. 
 
 ---
 
