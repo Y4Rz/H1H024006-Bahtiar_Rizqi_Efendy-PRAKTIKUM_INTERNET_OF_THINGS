@@ -12,7 +12,22 @@
 
 Alur proses program dapat digambarkan sebagai berikut:
 
-
+```mermaid
+flowchart TD
+    A([Mulai]) --> B[Hubungkan ke WiFi]
+    B --> C{WiFi Terhubung?}
+    
+    C -- Tidak --> B
+    C -- Ya --> D[Buat Data JSON]
+    
+    D --> E[Kirim HTTP POST]
+    E --> F[Terima Response]
+    F --> G[Tampilkan Response]
+    G --> H[Delay 10 Detik]
+    
+    H --> I([Ulangi])
+    I --> D
+```
 
 Secara umum, ESP8266 terlebih dahulu melakukan koneksi ke jaringan WiFi. Setelah koneksi tersedia, program membentuk data sensor dalam format JSON, mengirimkannya menggunakan metode HTTP POST, kemudian membaca respons dari server. Proses tersebut diulang dengan interval 10 detik.
 
